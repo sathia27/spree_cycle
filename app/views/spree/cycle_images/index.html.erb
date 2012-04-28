@@ -1,0 +1,10 @@
+<ul id="homepage_cycle">
+  <% @cycle_images.each do |cycle_image| %>
+    <li>
+      <%= link_to image_tag(cycle_image.image.url), product_path(cycle_image.link) %>
+    </li>
+  <% end %>
+</ul>
+<script>
+  $('#homepage_cycle').cycle();
+</script>

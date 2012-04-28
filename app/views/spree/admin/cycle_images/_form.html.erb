@@ -1,0 +1,17 @@
+<%= f.field_container :image do %>
+  <%= f.label :image, t("image") %><br />
+  <%= f.file_field :image  %>
+  <%= error_message_on :cycle_image, :image %>
+<% end %>
+
+<%= f.field_container :description do %>
+  <%= f.label :description, t("description") %><br />
+  <%= f.text_field :description  %>
+  <%= error_message_on :cycle_image, :description %>
+<% end %>
+
+<%= f.field_container :link do %>
+  <%= f.label :link, t("link") %><br />
+  <%= f.text_field :link  %>
+  <%= error_message_on :cycle_image, :link %>
+<% end %>
