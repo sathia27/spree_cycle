@@ -3,4 +3,4 @@ gem "spree_cycle", :git => "https://github.com/sathia27/spree_cycle"
 and then run
 rails g spree_cycle:install
 
-
+cycle images url is product's slug.
