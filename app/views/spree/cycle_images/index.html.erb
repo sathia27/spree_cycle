@@ -6,5 +6,7 @@
   <% end %>
 </ul>
 <script>
-  $('#homepage_cycle').before('<div id="nav">').cycle({pager:  '#nav'});
+  $(document).ready(function(){
+    $('#homepage_cycle').before('<div id="nav">').cycle({pager:  '#nav'});
+  });
 </script>
