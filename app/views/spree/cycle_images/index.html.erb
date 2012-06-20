@@ -1,3 +1,4 @@
+<div id = "nav" class = "nav"></div>
 <ul id="homepage_cycle">
   <% @cycle_images.each do |cycle_image| %>
     <li>
@@ -6,10 +7,7 @@
   <% end %>
 </ul>
 <script>
-  $('#homepage_cycle').before('<div id="nav">').cycle({
-    fx:     'turnDown', 
-    speed:  'fast', 
-    timeout: 3000,
+  $('#homepage_cycle').cycle({
     pager:  '#nav'
   });
 </script>
