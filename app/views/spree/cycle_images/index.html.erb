@@ -1,4 +1,3 @@
-<div id="nav" class="nav"><a href="#" class="">1</a><a href="#" class="">2</a><a href="#" class="activeSlide">3</a><a href="#" class="">4</a><a href="#" class="">5</a><a href="#" class="">6</a><a href="#" class="">7</a><a href="#" class="">8</a></div>
 <ul id="homepage_cycle">
   <% @cycle_images.each do |cycle_image| %>
     <li>
@@ -7,7 +6,7 @@
   <% end %>
 </ul>
 <script>
-  $('#homepage_cycle').cycle({
+  $('#homepage_cycle').before('<div id="nav">').cycle({
     pager:  '#nav'
   });
 </script>
