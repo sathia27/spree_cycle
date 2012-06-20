@@ -6,7 +6,10 @@
   <% end %>
 </ul>
 <script>
-  $(document).ready(function(){
-    $('#homepage_cycle').before('<div id="nav">').cycle({pager:  '#nav'});
+  $('#homepage_cycle').before('<div id="nav">').cycle({
+    fx:     'turnDown', 
+    speed:  'fast', 
+    timeout: 3000,
+    pager:  '#nav'
   });
 </script>
